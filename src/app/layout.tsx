@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "Bondhu — Community Impact",
+  title: "BeaconBD",
   description: "Create, join and track social development events."
 };
 
