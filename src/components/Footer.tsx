@@ -3,7 +3,11 @@ export function Footer() {
     <footer className="border-t border-[var(--border)] bg-[var(--card)]">
       <div className="container grid gap-8 py-12 md:grid-cols-3">
         <div>
-          <div className="text-xl font-black">BeaconBD</div>
+          <div className="text-xl font-black">
+  <span className="text-[#064e3b] dark:text-[#10b981]">Beacon</span>
+  <span className="text-[#991b1b] dark:text-[#f87171]">BD</span>
+</div>
+
           <p className="muted mt-3 max-w-sm">A community-driven platform for turning small acts of service into visible local impact.</p>
         </div>
         <div>
