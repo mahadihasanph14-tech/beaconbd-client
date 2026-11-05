@@ -47,21 +47,47 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="section pt-4">
-        <div className="container grid gap-5 md:grid-cols-3">
-          {[
-            [HeartHandshake, "Serve together", "Find people who care about the same local causes."],
-            [Leaf, "Create impact", "Organize cleanups, plantation drives and donation events."],
-            [Users, "Build community", "Join events and make volunteering a shared habit."]
-          ].map(([Icon, title, text]) => (
-            <div className="card p-6" key={title as string}>
-              <div className="grid size-12 place-items-center rounded-2xl bg-[var(--soft)] text-[var(--primary)]"><Icon size={23} /></div>
-              <h3 className="mt-5 text-xl font-extrabold">{title as string}</h3>
-              <p className="muted mt-2">{text as string}</p>
-            </div>
-          ))}
+  <section className="section pt-4">
+  <div className="container">
+    
+    <div className="mb-8 text-left">
+      <p className="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">
+        WHY JOIN US?
+      </p>
+      <h2 className="mt-1 text-3xl font-black text-gray-500 dark:text-zinc-400 sm:text-4xl">
+        Our Core Initiatives
+      </h2>
+    </div>
+
+    <div className="grid gap-5 md:grid-cols-3">
+      {[
+        [HeartHandshake, "Serve together", "Find people who care about the same local causes."],
+        [Leaf, "Create impact", "Organize cleanups, plantation drives and donation events."],
+        [Users, "Build community", "Join events and make volunteering a shared habit."]
+      ].map(([Icon, title, text]) => (
+        <div 
+          className="card p-6 border border-gray-100 bg-white text-gray-900 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-50 hover:border-[var(--primary)] dark:hover:border-[var(--primary)]" 
+          key={title as string}
+        >
+          <div className="grid size-12 place-items-center rounded-2xl bg-[var(--soft)] text-[var(--primary)]">
+            <Icon size={23} />
+          </div>
+        
+          <h3 className="mt-5 text-xl font-extrabold text-gray-500 dark:text-zinc-400">
+            {title as string}
+          </h3>
+          <p className="mt-2 text-gray-400 dark:text-zinc-500 text-sm font-medium">
+            {text as string}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+
+
 
       <section className="section">
         <div className="container">
