@@ -23,12 +23,13 @@ return ( <header className="sticky top-0 z-50 border-b border-[var(--border)] bg
 
 
     <Link href="/">
-      <img
-        src="/logo.jpg"
-        alt="BeaconBD"
-        className="h-12 w-auto rounded-xl border-2 border-green-700 object-contain sm:h-14"
-      />
-    </Link>
+  <img
+    src="/logo.jpg"
+    alt="BeaconBD"
+    className="h-12 w-auto rounded-xl border-2 border-[#045941] dark:border-[#10b981] object-contain sm:h-14 p-0.5 bg-white dark:bg-gray-800"
+  />
+</Link>
+
 
     <nav className="flex flex-1 justify-center">
       <Link
