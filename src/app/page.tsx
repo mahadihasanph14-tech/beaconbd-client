@@ -107,15 +107,31 @@ export default async function Home() {
       </section>
 
       <section className="section">
-        <div className="container">
-          <div className="rounded-[32px] bg-[var(--primary)] p-8 text-white md:p-12">
-            <div className="grid gap-8 md:grid-cols-[1fr_400px] md:items-center">
-              <div><p className="font-bold opacity-80">STAY CONNECTED</p><h2 className="mt-2 text-4xl font-black">Get the next good thing in your inbox.</h2><p className="mt-3 opacity-80">Monthly event highlights and simple ways to help your community.</p></div>
-              <div className="flex gap-2"><input className="input bg-white text-black" placeholder="Your email address" /><button className="btn bg-black text-white">Subscribe</button></div>
-            </div>
-          </div>
+  <div className="container">
+    
+    <div className="rounded-[32px] bg-[var(--primary)] dark:bg-emerald-950 p-8 text-white md:p-12 transition-colors duration-300">
+      <div className="grid gap-8 md:grid-cols-[1fr_400px] md:items-center">
+        <div>
+          <p className="font-bold opacity-80 uppercase tracking-wider">STAY CONNECTED</p>
+          <h2 className="mt-2 text-4xl font-black">Get the next good thing in your inbox.</h2>
+          <p className="mt-3 opacity-80">Monthly event highlights and simple ways to help your community.</p>
         </div>
-      </section>
+        
+        <div className="flex gap-2">
+          <input 
+            className="input bg-white text-black dark:bg-zinc-800 dark:text-white dark:placeholder-zinc-400 w-full" 
+            placeholder="Your email address" 
+          />
+          
+          <button className="btn rounded-full px-6 font-bold bg-white text-[var(--primary)] dark:bg-[var(--primary)] dark:text-white hover:bg-opacity-90 dark:hover:bg-opacity-90 transition-all duration-200 shadow-md">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }
